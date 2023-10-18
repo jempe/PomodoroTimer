@@ -17,7 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Pomodoro Timer")
+            Text("Timer")
                 .font(.largeTitle)
                 .padding()
             
