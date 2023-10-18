@@ -45,6 +45,10 @@ struct ContentView: View {
     }
     
     func startTimer() {
+        if timeRemaining == 0 {
+            resetTimer()
+        }
+
         isTimerRunning = true
         timer = Timer.scheduledTimer(withTimeInterval: timerInterval, repeats: true, block: { _ in
             if timeRemaining > 0 {
